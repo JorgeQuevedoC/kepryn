@@ -217,3 +217,60 @@ body {
   padding-top:10%;
   left:5%;
 }
+
+
+/* CUSTOMIZED */
+
+#profile_image{
+  text-align: left;
+  height: 100%;
+}
+
+.totalHeight {
+  height: 100%;
+}
+
+.amarillo {
+  color: #E0E0E0;
+  font-family: 'Open Sans', sans-serif;  
+}
+
+#titulo {
+  font-weight: 600;
+  margin-top: 30px;
+  height: 10%;
+  margin-bottom: 0px;
+}
+
+#carrera {
+  font-weight: 400;
+  height: 10%;
+}
+
+#profileimage{
+  max-height: 30%;
+  border-style: solid;
+  border-width: 10px;
+  border-color: #232F34;
+  z-index: 2;
+  position: absolute;
+  margin-left: 10%;
+}
+
+#redessociales {
+  z-index: 1;
+  background-color: #344955;
+  position: relative;
+  margin-top: 15%;
+  height: 85%;
+}
+
+@media (max-width: 770px) {
+  #profile_image {
+    text-align: center !important;    
+  }
+
+  #profileimage {
+    margin-left: 0% !important;
+  }
+}
