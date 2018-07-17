@@ -13,6 +13,9 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
     <!-- Custom styles for this template -->
     <link href="cover.css" rel="stylesheet">
   </head>
@@ -20,42 +23,79 @@
   <body class="text-center">
 
     <div class="container-fluid d-flex h-100 p-3 mx-auto flex-column">
-        <header class="masthead mb-auto">
+        <header class="masthead ">
             <div class="inner">
                 <img src="favicon4.png" class="masthead-brand">
                 <nav class="nav nav-masthead justify-content-center">
                     <a class="nav-link active" href="#">Home</a>
-                    <a class="nav-link" href="#">Features</a>
-                    <a class="nav-link" href="#">Contact</a>
+                    <!-- <a class="nav-link" href="#">Features</a>
+                    <a class="nav-link" href="#">Contact</a> -->
                 </nav>
             </div>
         </header>
 
-        <div class="row">
-            <div class="col-md-5">
+        <div class="row" id="rower" >
+            <div class="col-lg-5 col-md-12" id="myContainer">
                 <div class="row justify-content-center" style="height:100%;">
                     <div class="col-md-10 justify-content-center" id="profile_image">
                         <img src="img/profile3.jpg" id="profileimage" class="rounded-circle">
                         <div id="redessociales">
                             <div class="row justify-content-center totalHeight">
-                                <div class="col-md-6 offset-md-6">
-                                    <h5 class="amarillo" id="titulo"> Jorge Alberto Quevedo Cruz</h5>
+                                <div class="col-md-6 offset-md-6" style="height:20%;">
+                                    <h5 class="amarillo" id="titulo"> Jorge Alberto Quevedo Cruz</h5><br>
                                     <h6 class="amarillo" id="carrera"> Full Stack Developer</h6>
+                                </div>
+                                <div class="col-md-12" style="height:10%;">
+                                    <div class="row" style="height:100%;">
+                                        <div class="col-md-4 icons"><a href="https://www.github.com/JorgeQuevedoC"><i class="fab fa-github"></i></a></div>
+                                        <div class="col-md-4 icons"><a href="https://www.linkedin.com/in/jorgequevedoc/"><i class="fab fa-linkedin"></i></a></div>
+                                        <div class="col-md-4 icons"><a href="mailto:jorgequevedoc@gmail.com?Subject=Website contact" target="_top"><i class="fas fa-envelope"></i></a></div>            
+                                    </div>
+                                    <hr style="border-color: white; margin-left:20px; margin-right: 20px;">
+                                </div>
+                                <div class="col-md-12" style="height:50%;">
+                                    <p id="description">
+                                        I would define myself as a Full-Stack WEB and Software Developer; with experience in Laravel, the MVC model, Restful APIs, the AWS console and backend languages like PHP, Javascript and Python.
+                                        <br>
+                                        <br>
+                                        I feel comfortable with Java, having implemented algorithms, data structures and developing Object Oriented applications at college. Also, I have worked with distributed and parallel systems and some Computer Vision Algorithms.
+                                        <br>
+                                        <br>
+                                        Now, I am getting into SCRUM methodology and some User Experience techniques. I have a big interest in Bussiness Intelligence and Data Analytics.
+                                    </p>
+                                    <hr id="segundaHr" style="border-color: white; margin-left:20px; margin-right: 20px; margin-top: 12%;">
+                                    <p class="note">*Click on the numbered hexagons to see my projects</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-7">
-                <ul id="categories" class="clr">
-                    <li>
-                        <div>
-                            <img src="https://farm5.staticflickr.com/4144/5053682635_b348b24698.jpg" alt=""/>
-                            <h1>This is a title</h1>
-                            <p>Some sample text about the article this hexagon leads to</p>
+            <div class="col-md-12 col-sm-12" id="myContainer2" style="display:none;">
+                <div class="row justify-content-center" style="height:80%;">
+                    <div class="col-md-10 justify-content-center" style="height: auto;">         
+                        <img src="img/profile3.jpg" id="profileimage" class="rounded-circle">               
+                        <div id="redessociales">
+                            <div class="row justify-content-center totalHeight">                              
+                                <div class="col-sm-12" style="height:20%; margin-top: 20%;">
+                                    <h5 class="amarillo"> <strong>Jorge Alberto Quevedo Cruz</strong><br><br>Full Stack Developer </h5><br>                                    
+                                </div>
+                            </div>
                         </div>
-                    </li>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-7 col-xs-12 col-md-10 offset-md-1"  >
+                <ul id="categories" class="clr">
+                    <a class="ligas" href="http://www.kepryn.com/yadatex">
+                        <li>
+                        <div>
+                            <img src="img/1.png" alt=""/>
+                            <h1>YADATEX</h1>
+                            <p>Web page developed using HTML, CSS and Vanilla JS</p>
+                        </div>
+                        </li>
+                    </a>
                     <li>
                         <div id="test">
                             <img src="img/laravel.png" alt=""/>
@@ -63,13 +103,15 @@
                             <p>Most used framework on my full stack developments.</p>
                         </div>
                     </li>
-                    <li>
-                        <div>
-                            <img src="img/react.png" alt=""/>
-                            <h1>This is a title</h1>
-                            <p>Some sample text about the article this hexagon leads to</p>
-                        </div>
-                    </li>
+                    <a class="ligas" href="http://www.kepryn.com/autoplastek">
+                        <li>
+                            <div>
+                                <img src="img/3.png" alt=""/>
+                                <h1>Autoplastek</h1>
+                                <p>Web page designed for the automotive industry.</p>
+                            </div>
+                        </li>
+                    </a>
                     <li>
                         <div>
                             <img src="img/react.png" alt=""/>
@@ -77,23 +119,25 @@
                             <p>Latest library learnt and small integrations with laravel.</p>
                         </div>
                     </li>
+                    <a class="ligas" href="http://www.kepryn.com/autoplastek">
+                        <li>                        
+                            <div>
+                                <img src="img/2.png" alt=""/>
+                                <h1>APIVER</h1>
+                                <p>Veracruz's port web app: </p>
+                            </div>                        
+                        </li>
+                    </a>
                     <li>
                         <div>
-                            <img src="https://farm3.staticflickr.com/2827/10384422264_d9c7299146.jpg" alt=""/>
+                            <img src="img/6.png" alt=""/>
                             <h1>This is a title</h1>
                             <p>Some sample text about the article this hexagon leads to</p>
                         </div>
                     </li>
                     <li>
                         <div>
-                            <img src="https://farm5.staticflickr.com/4144/5053682635_b348b24698.jpg" alt=""/>
-                            <h1>This is a title</h1>
-                            <p>Some sample text about the article this hexagon leads to</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <img src="https://farm7.staticflickr.com/6217/6216951796_e50778255c.jpg" alt=""/>
+                            <img src="img/4.png" alt=""/>
                             <h1>This is a title</h1>
                             <p>Some sample text about the article this hexagon leads to</p>
                         </div>
@@ -107,7 +151,7 @@
                     </li>
                     <li>
                         <div>
-                            <img src="https://farm5.staticflickr.com/4144/5053682635_b348b24698.jpg" alt=""/>
+                            <img src="img/5.png" alt=""/>
                             <h1>This is a title</h1>
                             <p>Some sample text about the article this hexagon leads to</p>
                         </div>
@@ -116,13 +160,9 @@
                 </ul>
             </div>
         </div>
-
-        <footer class="mastfoot mt-auto">
-            <div class="inner">
-                <p>Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
-            </div>
-        </footer>
     </div>
+    
+            
 
 
     <!-- Bootstrap core JavaScript
